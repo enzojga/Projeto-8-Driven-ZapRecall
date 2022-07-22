@@ -100,7 +100,6 @@ body{
 
 .cards{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,6 +117,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 25px;
+    line-break: auto;
 }
 
 .barra-inferior{
@@ -131,6 +132,31 @@ body{
 
 .card ion-icon{
     font-size: 27px;
+}
+
+.face {
+    width: 299px;
+    height: 131px;
+    font-family: Recursive;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    background-color: #FFFFD5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    margin-bottom: 25px;
+}
+
+.pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .escondido{
     display: none;
