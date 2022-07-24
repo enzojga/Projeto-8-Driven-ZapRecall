@@ -89,7 +89,7 @@ body{
     align-items: center;
     margin-top: 42px;
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 27px;
 }
 
 .topo-flashcards img{
@@ -105,19 +105,14 @@ body{
     align-items: center;
 }
 
+.cads > :nth-last-child(4){
+    margin-bottom: 95px;
+}
+
 .card{
-    width: 300px;
-    height: 65px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 25px;
     line-break: auto;
 }
 
@@ -128,6 +123,17 @@ body{
     bottom: 0;
     left: 0;
     background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.barra-inferior ion-icon{
+    font-size: 23px;
 }
 
 .card ion-icon{
@@ -144,19 +150,70 @@ body{
     background-color: #FFFFD5;
     border-radius: 5px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: all .5s;
-    transform-style: preserve-3d;
-    margin-bottom: 25px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 25px;
 }
 
+.frente{
+    align-items: center;
+}
+
+.verso{
+    display: flex;
+    flex-direction: column;
+}
+.zaps{
+    width: 85px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.erro{
+    color:red;
+    text-decoration: line-through;
+}
+.duvida {
+    color: #FF922E;
+    text-decoration: line-through;
+}
+.acerto{
+    color:#2FBE34;
+    text-decoration: line-through;
+}
+.nao-lembrei{
+    background-color: #FF3030;
+}
+.quase{
+    background-color: #FF922E;
+}
+.correta{
+    background-color: #2FBE34;
+}
+.opcoes{
+    display: flex;
+    justify-content: space-around;
+}
 .pergunta {
+    width: 300px;
+    height: 65px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    line-break: auto;
 }
 .escondido{
     display: none;
