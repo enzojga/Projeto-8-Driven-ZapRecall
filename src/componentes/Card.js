@@ -44,7 +44,7 @@ export default function Card(props){
                 </div>
                 <div class={frente}>
                     <p>{props.pergunta}</p>
-                    <ion-icon name="reload-outline" onClick={mostraPergunta}></ion-icon>
+                    <img src="./assets/images/seta.png" onClick={mostraPergunta}/>
                 </div>
                 <div class={verso}>
                     <p>{props.resposta}</p>
