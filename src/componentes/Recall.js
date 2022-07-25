@@ -21,7 +21,7 @@ export default function Recall(){
                 <h1>ZapRecall</h1>
             </div>
             <div className="cards">
-                {perguntas.map((pergunta, i) =>(<Card pergunta ={pergunta.pergunta} resposta ={pergunta.resposta} index ={i} respondidas={respondidas} setRespondidas={setRespondidas} setContador={setContador}/>)).sort(() => (Math.random() - 0.5))}
+                {perguntas.sort(() => (Math.random() - 0.5)).map((pergunta, i) =>(<Card pergunta ={pergunta.pergunta} resposta ={pergunta.resposta} index ={i} respondidas={respondidas} setRespondidas={setRespondidas} setContador={setContador}/>))}
             </div>
         </div>
         <BarraInferior respondidas={respondidas} perguntasTamanho={perguntas.length} contador={contador}/>
