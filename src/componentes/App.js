@@ -1,12 +1,14 @@
 import TelaInicial from "./TelaInicial"
 import Recall from "./Recall"
-import BarraInferior from "./BarraInferior"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App(){
     return(
-        <>
-            <TelaInicial/>
-            <Recall/>
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<TelaInicial/>} />
+                <Route path="/recall" element={<Recall/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }

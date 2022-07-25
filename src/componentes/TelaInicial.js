@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function TelaInicial(){
     const [escondido, setEscondido] = React.useState('tela-inicial');
@@ -12,9 +13,9 @@ export default function TelaInicial(){
             <div>
             </div>
             <h1>ZapRecall</h1>
-            <div onClick={() => iniciarJogo()}>
+            <Link to="/recall"><div onClick={() => iniciarJogo()}>
                 <h2>Iniciar Recall!</h2>
-            </div>
+            </div></Link>
        </div>
     )
 }
