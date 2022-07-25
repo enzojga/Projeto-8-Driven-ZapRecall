@@ -153,10 +153,8 @@ body{
     line-height: 22px;
     color: #333333;
     background-color: #FFFFD5;
-    text-align: center;
     border-radius: 5px;
     display: flex;
-    justify-content: center;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     margin-top: 25px;
 }
@@ -165,9 +163,11 @@ body{
     bottom: 6px;
     right: 15px;
 }
-.face p{
+.face > p{
     overflow: hidden;
     max-width: 247px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 .frente{
@@ -212,8 +212,11 @@ body{
     background-color: #2FBE34;
 }
 .opcoes{
+    width: 100%;
+    position: absolute;
     display: flex;
     justify-content: space-around;
+    bottom: 5px;
 }
 .resultado{
     display: flex;
